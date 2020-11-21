@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+          background-image: url('https://img.favpng.com/12/22/11/desktop-wallpaper-star-trek-starfleet-wallpaper-png-favpng-FTvVJgBNqFeVLHFrcDEaqrqeh.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Time!</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="title-screen">
+        <h1>Star Trek Knowledge Quiz</h1>
+        <br>
+        <h3>"Boldy go where no one has gone before..."</h3>
+        <br>
+        <br>
+        <button onclick="startQuiz()">Start</button>
+    </div>
+    <div id="quiz" style="display:none;">
+        <br>
+        <br>
+        <br>
+        <h1 id="question-title"></h1>
+        <br>
+        <br>
+        <br>
+        <div id="questions">
+            <button id="0" onclick="nextQuestion(this)"></button>
+            <button id="1" onclick="nextQuestion(this)"></button>
+            <button id="2" onclick="nextQuestion(this)"></button>
+            
+        </div>
+        <p id="question-result" style="display:none;"></p>
+    </div>
+    <div id="quiz-end" style="display:none;">
+        <h3>15 Points is 100%!</h3>
+        <br>
+        <br>
+        <h3>You got:</h3>
+        <h3 id="score">0</h3>
+        <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
